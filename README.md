@@ -1,58 +1,21 @@
-<div align="center">
+name: Update README
 
-# Hey, I'm Gowtham 👋
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
 
-🎓 B.Tech AI & ML @ Vignan University | 💼 Full Stack Intern @ Thiranex
-🤖 Building AI/ML apps & Android tools | 🌱 Open to internships & hackathons
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
 
-[![GitHub followers](https://img.shields.io/github/followers/g0wtham-eng?style=flat&logo=github)](https://github.com/g0wtham-eng)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://linkedin.com/in/YOUR_LINKEDIN)
+    steps:
+      - uses: actions/checkout@v4
 
-</div>
-
----
-
-## 📊 GitHub Stats
-
-<!--START_SECTION:stats-->
-<!--END_SECTION:stats-->
-
----
-
-## 🔥 Streak
-
-<!--START_SECTION:streak-->
-<!--END_SECTION:streak-->
-
----
-
-## ⚡ Recent Activity
-
-<!--START_SECTION:activity-->
-<!--END_SECTION:activity-->
-
----
-
-## 🛠️ Tech Stack
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat&logo=kotlin&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-![YOLOv8](https://img.shields.io/badge/YOLOv8-111111?style=flat&logo=github&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
-![Android](https://img.shields.io/badge/Android-3DDC84?style=flat&logo=android&logoColor=white)
-
----
-
-<div align="center">
-<i>🤖 Auto-updated daily by GitHub Actions</i>
-</div>
-## 📊 GitHub Stats
-
-![Gowtham's GitHub Stats](https://github-readme-stats.vercel.app/api?username=g0wtham-eng&show_icons=true&theme=tokyonight&hide_border=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=g0wtham-eng&layout=compact&theme=tokyonight&hide_border=true)
-
-## 🔥 Streak
-
-![GitHub Streak](https://streak-stats.demolab.com?user=g0wtham-eng&theme=tokyonight&hide_border=true)
+      - name: Recent Activity
+        uses: Readme-Workflows/recent-activity@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          GH_USERNAME: g0wtham-eng
+          CONFIG_FILE: .github/recent-activity.config.yml
