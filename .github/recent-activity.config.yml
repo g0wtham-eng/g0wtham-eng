@@ -1,0 +1,7 @@
+username: g0wtham-eng
+max_lines: 5
+commit_message: "⚡ Update README with recent activity"
+readme_file: ./README.md
+comments:
+  start_comment: "<!--START_SECTION:activity-->"
+  end_comment: "<!--END_SECTION:activity-->"
