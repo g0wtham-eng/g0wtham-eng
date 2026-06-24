@@ -47,3 +47,12 @@
 <div align="center">
 <i>🤖 Auto-updated daily by GitHub Actions</i>
 </div>
+## 📊 GitHub Stats
+
+![Gowtham's GitHub Stats](https://github-readme-stats.vercel.app/api?username=g0wtham-eng&show_icons=true&theme=tokyonight&hide_border=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=g0wtham-eng&layout=compact&theme=tokyonight&hide_border=true)
+
+## 🔥 Streak
+
+![GitHub Streak](https://streak-stats.demolab.com?user=g0wtham-eng&theme=tokyonight&hide_border=true)
